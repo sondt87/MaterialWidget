@@ -5,9 +5,9 @@ android {
     buildToolsVersion '20.0.0'
 
     defaultConfig {
-        applicationId "com.github.android.material.widget"
+        applicationId "com.github.android.material.example"
         minSdkVersion 14
-        targetSdkVersion 20
+        targetSdkVersion 19
         versionCode 1
         versionName "1.0"
     }
@@ -17,8 +17,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    packagingOptions {
+        exclude 'resources.arsc'
+        exclude 'AndroidManifest.xml'
+        exclude 'classes.dex'
+    }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':material')
 }
