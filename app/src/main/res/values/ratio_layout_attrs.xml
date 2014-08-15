@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RatioLayout">
+        <attr name="ratio" format="integer">
+            <enum name="ratio_16_9" value="1"/>
+            <enum name="ratio_3_2" value="2"/>
+            <enum name="ratio_4_3" value="3"/>
+            <enum name="ratio_1_1" value="4"/>
+            <enum name="ratio_3_4" value="5"/>
+            <enum name="ratio_2_3" value="6"/>
+        </attr>
+    </declare-styleable>
+</resources>
